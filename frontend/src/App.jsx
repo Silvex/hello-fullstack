@@ -4,7 +4,7 @@ function App() {
   const [msg, setMsg] = useState("Ładowanie...")
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/hello")
+    fetch("https://hello-fullstack.onrender.com/hello")
       .then(res => res.json())
       .then(data => setMsg(data.message))
   }, [])
