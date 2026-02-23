@@ -4,7 +4,7 @@ function App() {
   const [notes, setNotes] = useState([])
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/notes")
+    fetch("https://hello-fullstack.onrender.com/notes")
       .then(res => res.json())
       .then(data => setNotes(data))
   }, [])
